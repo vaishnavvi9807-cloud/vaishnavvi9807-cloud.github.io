@@ -69,6 +69,11 @@
         .btn-outline:hover {
             background: rgba(77, 141, 255, 0.1);
         }
+
+        .protosem-tab.active {
+            color: #00D4A8;
+            background-color: rgba(0, 212, 168, 0.1);
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-[#00D4A8] selection:text-[#080B12]">
@@ -82,6 +87,7 @@
             <a href="#education" class="text-[#9AA7B8] hover:text-[#F4F7FA] transition">Education</a>
             <a href="#skills" class="text-[#9AA7B8] hover:text-[#F4F7FA] transition hidden lg:block">Skills</a>
             <a href="#experience" class="text-[#9AA7B8] hover:text-[#F4F7FA] transition">Experience</a>
+            <a href="#protosem" class="text-[#9AA7B8] hover:text-[#F4F7FA] transition hidden lg:block">ProtoSem</a>
             <a href="#projects" class="text-[#9AA7B8] hover:text-[#F4F7FA] transition hidden lg:block">Projects</a>
             <a href="#certifications" class="text-[#9AA7B8] hover:text-[#F4F7FA] transition hidden xl:block">Certifications</a>
             <a href="#achievements" class="text-[#9AA7B8] hover:text-[#F4F7FA] transition hidden xl:block">Achievements</a>
@@ -230,6 +236,68 @@
                         <li class="flex items-center gap-3"><span class="text-[#00D4A8] text-xl">&bull;</span> Research and presentation</li>
                         <li class="flex items-center gap-3"><span class="text-[#00D4A8] text-xl">&bull;</span> Real-world project experience</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ProtoSem Section -->
+        <section id="protosem" class="py-20">
+            <h3 class="text-3xl font-bold mb-10 border-b border-[#263448] pb-4 inline-block" data-aos="fade-right">PRICE ProtoSem</h3>
+            
+            <div class="glass-card p-8 md:p-10 hover:border-[#00D4A8] transition duration-300 mb-12" data-aos="fade-up">
+                <div class="mb-6">
+                    <span class="text-[#00D4A8] text-xs font-bold tracking-widest uppercase mb-2 block">Innovation Engineer Trainee</span>
+                    <h4 class="text-2xl font-bold text-[#F4F7FA]">20-Week Industry-Integrated Innovation Programme</h4>
+                </div>
+                <p class="text-[#9AA7B8] leading-relaxed mb-8 text-lg">
+                    Selected for a 20-week industry-integrated innovation programme focused on solving real-world retail and commerce challenges through AI, analytics, intelligent systems, IoT, prototyping, and entrepreneurship.
+                    <br><br>
+                    Working with industry problem statements to explore, develop, and validate practical technology solutions beyond conventional classroom learning.
+                </p>
+                
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-[#080B12] border border-[#263448] text-[#9AA7B8] px-4 py-2 rounded-full text-sm font-medium hover:border-[#00D4A8] hover:text-[#F4F7FA] transition cursor-default">Phygital Retail &amp; Intelligent Commerce</span>
+                    <span class="bg-[#080B12] border border-[#263448] text-[#9AA7B8] px-4 py-2 rounded-full text-sm font-medium hover:border-[#4D8DFF] hover:text-[#F4F7FA] transition cursor-default">AI &amp; Analytics</span>
+                    <span class="bg-[#080B12] border border-[#263448] text-[#9AA7B8] px-4 py-2 rounded-full text-sm font-medium hover:border-[#00D4A8] hover:text-[#F4F7FA] transition cursor-default">Intelligent Systems &amp; IoT</span>
+                    <span class="bg-[#080B12] border border-[#263448] text-[#9AA7B8] px-4 py-2 rounded-full text-sm font-medium hover:border-[#4D8DFF] hover:text-[#F4F7FA] transition cursor-default">Prototyping</span>
+                    <span class="bg-[#080B12] border border-[#263448] text-[#9AA7B8] px-4 py-2 rounded-full text-sm font-medium hover:border-[#00D4A8] hover:text-[#F4F7FA] transition cursor-default">Entrepreneurship</span>
+                </div>
+            </div>
+
+            <!-- Programme Archive / 20-Week Journey -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-8 border-b border-[#263448] pb-6 gap-6">
+                    <div>
+                        <h4 class="text-xl font-bold text-[#F4F7FA]">Programme Archive</h4>
+                        <p class="text-[#9AA7B8] text-sm mt-1">A chronological 20-week journey.</p>
+                    </div>
+                    
+                    <!-- Progress / Phase Tabs -->
+                    <div class="flex flex-wrap justify-center items-center gap-2 md:gap-4 bg-[#0E1420] p-1.5 rounded-lg border border-[#263448]">
+                        <button onclick="filterProtoSem('ALL')" id="tab-ALL" class="protosem-tab active px-4 py-2 rounded-md text-sm font-bold text-[#00D4A8] bg-[rgba(0,212,168,0.1)] transition">ALL</button>
+                        <button onclick="filterProtoSem('PHASE-01')" id="tab-PHASE-01" class="protosem-tab px-4 py-2 rounded-md text-sm font-bold text-[#9AA7B8] hover:text-[#F4F7FA] transition">PHASE 01</button>
+                        <button onclick="filterProtoSem('PHASE-02')" id="tab-PHASE-02" class="protosem-tab px-4 py-2 rounded-md text-sm font-bold text-[#9AA7B8] hover:text-[#F4F7FA] transition">PHASE 02</button>
+                        <button onclick="filterProtoSem('PHASE-03')" id="tab-PHASE-03" class="protosem-tab px-4 py-2 rounded-md text-sm font-bold text-[#9AA7B8] hover:text-[#F4F7FA] transition">PHASE 03</button>
+                        <button onclick="filterProtoSem('PHASE-04')" id="tab-PHASE-04" class="protosem-tab px-4 py-2 rounded-md text-sm font-bold text-[#9AA7B8] hover:text-[#F4F7FA] transition">PHASE 04</button>
+                    </div>
+                </div>
+
+                <!-- Subtle Progress Bar -->
+                <div class="hidden md:flex justify-between items-center text-[#263448] text-xs font-bold tracking-widest mb-10 px-4">
+                    <span id="prog-01" class="text-[#00D4A8]">01</span>
+                    <div class="flex-grow border-t-2 border-dashed border-[#263448] mx-4"></div>
+                    <span id="prog-05" class="text-[#263448]">05</span>
+                    <div class="flex-grow border-t-2 border-dashed border-[#263448] mx-4"></div>
+                    <span id="prog-10" class="text-[#263448]">10</span>
+                    <div class="flex-grow border-t-2 border-dashed border-[#263448] mx-4"></div>
+                    <span id="prog-15" class="text-[#263448]">15</span>
+                    <div class="flex-grow border-t-2 border-dashed border-[#263448] mx-4"></div>
+                    <span id="prog-20" class="text-[#00D4A8]">20</span>
+                </div>
+
+                <!-- Grid Container for JS rendering -->
+                <div id="protosem-grid" class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5 relative border-l-2 border-[#263448] md:border-l-0 ml-2 md:ml-0">
+                    <!-- Cards will be injected here via JS -->
                 </div>
             </div>
         </section>
@@ -389,6 +457,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Contact Section -->
         <section id="contact" class="py-20 text-center">
             <h3 class="text-4xl font-bold mb-4" data-aos="fade-up">Let's Connect <span class="text-[#00D4A8]">&rarr;</span></h3>
@@ -458,6 +527,114 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        const protosemWeeks = Array.from({length: 20}, (_, i) => ({
+            week: i + 1,
+            phase: `PHASE-${String(Math.floor(i/5) + 1).padStart(2, '0')}`,
+            slug: `#protosem-week-${i + 1}`,
+            status: 'Coming Soon'
+        }));
+
+        function renderProtoSem(filter = 'ALL') {
+            const grid = document.getElementById('protosem-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+            
+            const filteredWeeks = filter === 'ALL' 
+                ? protosemWeeks 
+                : protosemWeeks.filter(w => w.phase === filter);
+
+            filteredWeeks.forEach((week, index) => {
+                const weekStr = String(week.week).padStart(2, '0');
+                
+                // Determine color accent based on phase
+                const isEvenPhase = parseInt(week.phase.split('-')[1]) % 2 === 0;
+                const accentColor = isEvenPhase ? 'border-[#4D8DFF] text-[#4D8DFF] bg-[rgba(77,141,255,0.1)]' : 'border-[#00D4A8] text-[#00D4A8] bg-[rgba(0,212,168,0.1)]';
+                const hoverAccent = isEvenPhase ? 'hover:border-[#4D8DFF]' : 'hover:border-[#00D4A8]';
+                
+                const card = `
+                    <div class="relative pl-6 md:pl-0 w-full" data-aos="fade-up" data-aos-delay="${(index % 5) * 50}">
+                        <!-- Mobile Timeline Node -->
+                        <div class="absolute -left-[5px] top-6 w-3 h-3 bg-[#080B12] border-2 ${isEvenPhase ? 'border-[#4D8DFF]' : 'border-[#00D4A8]'} rounded-full md:hidden"></div>
+                        
+                        <a href="javascript:void(0)" class="glass-card p-4 md:p-5 group flex flex-col justify-between h-32 md:h-40 ${hoverAccent} hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition duration-300 relative overflow-hidden block">
+                            
+                            <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[rgba(255,255,255,0.02)] to-transparent rounded-bl-full pointer-events-none group-hover:scale-150 transition duration-500"></div>
+
+                            <div>
+                                <span class="text-[#9AA7B8] text-[0.65rem] md:text-xs font-bold tracking-widest uppercase block mb-1">
+                                    ${filter === 'ALL' ? week.phase.replace('-', ' ') : 'WEEK INDEX'}
+                                </span>
+                                <h5 class="text-xl md:text-2xl font-black text-[#F4F7FA] group-hover:tracking-wider transition-all duration-300">WEEK ${weekStr}</h5>
+                            </div>
+                            
+                            <div class="flex items-center justify-between mt-auto">
+                                <span class="text-[0.6rem] md:text-[0.65rem] font-bold uppercase tracking-widest px-2 py-1 rounded border ${accentColor}">
+                                    ${week.status}
+                                </span>
+                                <svg class="w-4 h-4 text-[#263448] group-hover:text-[#F4F7FA] group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+            
+            // Re-trigger AOS for the newly added DOM elements
+            if(window.AOS) {
+                setTimeout(() => AOS.refreshHard(), 50);
+            }
+        }
+
+        function filterProtoSem(phase) {
+            // Update tabs
+            document.querySelectorAll('.protosem-tab').forEach(tab => {
+                tab.classList.remove('active', 'text-[#00D4A8]', 'bg-[rgba(0,212,168,0.1)]');
+                tab.classList.add('text-[#9AA7B8]');
+            });
+            
+            const activeTab = document.getElementById(`tab-${phase}`);
+            if (activeTab) {
+                activeTab.classList.remove('text-[#9AA7B8]');
+                activeTab.classList.add('active', 'text-[#00D4A8]', 'bg-[rgba(0,212,168,0.1)]');
+            }
+
+            // Update Progress Bar visuals
+            const markers = ['01', '05', '10', '15', '20'];
+            markers.forEach(m => {
+                const el = document.getElementById(`prog-${m}`);
+                if (el) {
+                    el.classList.remove('text-[#00D4A8]', 'text-[#4D8DFF]');
+                    el.classList.add('text-[#263448]');
+                }
+            });
+
+            if (phase === 'ALL') {
+                markers.forEach(m => {
+                    const el = document.getElementById(`prog-${m}`);
+                    if(el) el.classList.add('text-[#00D4A8]');
+                });
+            } else if (phase === 'PHASE-01') {
+                document.getElementById('prog-01')?.classList.add('text-[#00D4A8]');
+                document.getElementById('prog-05')?.classList.add('text-[#00D4A8]');
+            } else if (phase === 'PHASE-02') {
+                document.getElementById('prog-05')?.classList.add('text-[#4D8DFF]');
+                document.getElementById('prog-10')?.classList.add('text-[#4D8DFF]');
+            } else if (phase === 'PHASE-03') {
+                document.getElementById('prog-10')?.classList.add('text-[#00D4A8]');
+                document.getElementById('prog-15')?.classList.add('text-[#00D4A8]');
+            } else if (phase === 'PHASE-04') {
+                document.getElementById('prog-15')?.classList.add('text-[#4D8DFF]');
+                document.getElementById('prog-20')?.classList.add('text-[#4D8DFF]');
+            }
+
+            renderProtoSem(phase);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProtoSem('ALL');
+        });
+    </script>
+    <script>
         AOS.init({
             once: true,
             offset: 50,
@@ -467,5 +644,7 @@
     </script>
 </body>
 </html>
+
+
 
 
